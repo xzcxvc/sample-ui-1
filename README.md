@@ -1,2 +1,2 @@
 # ui-project-1
-![preview](/img/preview.jpg)
+![preview](/img/preview.png)
