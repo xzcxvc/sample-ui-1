@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - UNICASE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<style>
+    * {
+        font-family: 'Montserrat';
+    }
+
+    .text-logo {
+        font-weight: 700;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-top: 3px;
+        margin-bottom: 30px;
+        margin-right: 50px;
+        text-decoration-line: underline;
+        text-decoration-color: #5E7E71;
+        text-decoration-thickness: 5px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #000;
+    }
+
+    .nav-link.nav-text:hover {
+        color: #526e63;
+        text-decoration: underline;
+        text-decoration-color: #526e63;
+    }
+
+    .media-icon {
+        color: #000;
+    }
+
+    .facebook-icon:hover {
+        color: #3C5A9B;
+    }
+
+    .pinterest-icon:hover {
+        color: #E60023;
+    }
+
+    .twitter-icon:hover {
+        color: #1C9BF0;
+    }
+
+    .instagram-icon:hover {
+        color: #f09433;
+        color: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        color: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        color: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    }
+
+    .card {
+        border-radius: 0px;
+        padding-bottom: 160px;
+        border: none;
+    }
+
+    .site-img1 {
+        position: absolute;
+        min-width: 100px;
+        min-height: 752px;
+        left: 0px;
+        top: 50px;
+    }
+
+    .text-overline {
+        text-decoration: overline 7px;
+    }
+
+    .text-underline {
+        text-decoration: underline 7px;
+        text-underline-offset: 15px;
+    }
+
+    .main-text-container {
+        margin-top: 80px;
+    }
+
+    .main-text {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .p-img .col-6:first-child .position-absolute {
+        bottom: 0px;
+        left: 25px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 24px;
+        color: #FFFFFF;
+        text-shadow: #474747 3px 5px 2px;
+    }
+
+    .p-img .col-6:last-child .position-absolute {
+        bottom: 0px;
+        left: 25px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 24px;
+        color: #FFFFFF;
+        text-shadow: #474747 3px 5px 2px;
+    }
+
+    .p-img {
+        margin-top: 180px !important;
+    }
+
+    .get-on-text {
+        color: #FFFFFF;
+        text-align: center;
+        margin-top: 60px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .subscribe-form {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .subscribe-form input {
+        height: 50px;
+        width: 250px;
+        border: none;
+        padding-left: 30px;
+        outline: none;
+    }
+
+    .subscribe-form button {
+        height: 50px;
+        width: 168px;
+        background-color: #DADADA;
+        border-radius: 0;
+        transform: none;
+        text-transform: uppercase;
+        border: none;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .con-3 {
+        margin-top: 50px;
+    }
+
+    .con-3 h2 {
+        text-align: center;
+        margin-left: 50px;
+        font-weight: 800;
+        font-size: 40px;
+    }
+
+    .con-3 p {
+        margin-right: 80px;
+        font-size: 16px;
+    }
+
+    .con-4 {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .con-4 img {
+        width: 400px;
+    }
+
+    .con-4-card {
+        background-color: #EBEFEE;
+        width: 198px;
+        height: 173px;
+        position: relative;
+        top: -90px;
+        left: 110px;
+    }
+
+    .con-4-card p {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-weight: 800;
+        text-align: left;
+        margin-top: 45px;
+        margin-left: 30px;
+    }
+
+    .con-4-img-desc {
+        font-size: 16px;
+        font-weight: 300px;
+        margin-top: -50px;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    .img7 {
+        width: 1080px;
+        height: 600px;
+        margin-top: 50px;
+        margin-left: 120px;
+    }
+
+    .con-6 {
+        margin-top: 50px;
+        margin-left: 90px;
+    }
+
+    .con-6 p {
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .con-7 hr {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        outline: 1px solid #000;
+    }
+
+    .con-7 p {
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        color: #000;
+    }
+
+    .footer-media-nav {
+        list-style-type: none;
+        justify-content: center;
+        margin-bottom: 100px;
+    }
+
+</style>
+
+    <div class="container-fluid mt-5">
+        <div class="container top-nav">
+            <div class="row">
+                <div class="col-8">
+                    <ul class="nav float-start">
+                        <li class="nav-item">
+                            <h4 class="text-logo">blathanna</h4>
+                        </li>
+                        <li class="nav-item"><a href="" class="nav-link nav-text">blog</a></li>
+                        <li class="nav-item"><a href="" class="nav-link nav-text">shop</a></li>
+                        <li class="nav-item"><a href="" class="nav-link nav-text">portfolio</a></li>
+                        <li class="nav-item"><a href="" class="nav-link nav-text">about</a></li>
+                        <li class="nav-item"><a href="" class="nav-link nav-text">contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="nav float-end">
+                        <li class="nav-item"><a href="" class="nav-link"><iconify-icon class="facebook-icon media-icon"
+                                    icon="ri:facebook-fill"></iconify-icon></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><iconify-icon class="pinterest-icon media-icon"
+                                    icon="mdi:pinterest"></iconify-icon></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><iconify-icon class="twitter-icon media-icon"
+                                    icon="mdi:twitter"></iconify-icon></a></li>
+                        <li class="nav-item"><a href="" class="nav-link"><iconify-icon
+                                    class=" instagram-icon media-icon" icon="mdi:instagram"></iconify-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-6">
+                    <div class="card">
+                        <img src="img/img1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-6 main-text-container">
+                    <h2 class="main-text"><span class="text-overline">CUR</span>ATING</h2>
+                    <h2 class="main-text">THE BEST OF</h2>
+                    <h2 class="main-text">THE ORDINARY</h2>
+                    <h2 class="main-text"><span class="text-underline">& EV</span>ERYDAY</h2>
+                    <div class="container mt-5 p-img">
+                        <div class="row">
+                            <div class="col-6 ">
+                                <div class="position-relative">
+                                    <img src="img/img2.png" alt="">
+                                    <p class="position-absolute">the latest</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="position-relative">
+                                    <img src="img/img3.png" alt="">
+                                    <p class="position-absolute">insta with us</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container con-2">
+                    <div class="card subscribe-card" style="background: #5E7E71; height: 250px;">
+                        <h1 class="get-on-text">get on the list</h1>
+                        <div class="subscribe-form">
+                            <input type="text" placeholder="Email Address">
+                            <button class="btn-subscribe">subscribe</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container con-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2>WE’RE PASSIONATE
+                                ABOUT SIMPLICITY</h2>
+                        </div>
+                        <div class="col-6">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sapien sagittis, enim
+                                porttitor pharetra. Ultricies euismod dolore condimentum ullamcorper fermentum aliquam
+                                neque lorems elementum aenean at. Integer vel in in quis vitae elementum, sem rhoncus
+                                ante. Id placerat sed sit sodales consectetur. Ipsum semper augue sit ac elementum
+                                adipiscing tristique. Nunc tincidunt in egestas ut fusce. Sed sed faucibus mus tempus
+                                nulla non sit enim. Purus commodo ultricies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container con-4">
+                    <div class="row">
+                        <div class="col-4">
+                            <img class="img4" src="img/img4.png" alt="">
+                            <div class="card con-4-card">
+                                <p><span class="text-overline">get </span>the <span class="text-underline">goo</span>ds
+                                </p>
+                            </div>
+                            <p class="con-4-img-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                accusantium nisi veniam animi, similique itaque nam aliquid doloremque quae magnam?</p>
+                        </div>
+                        <div class="col-4">
+                            <img class="img5" src="img/img5.png" alt="">
+                            <div class="card con-4-card">
+                                <p><span class="text-overline">read</span> the <span class="text-underline">blog</span>s
+                                </p>
+                            </div>
+                            <p class="con-4-img-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                accusantium nisi veniam animi, similique itaque nam aliquid doloremque quae magnam?</p>
+                        </div>
+                        <div class="col-4">
+                            <img class="img6" src="img/img6.png" alt="">
+                            <div class="card con-4-card">
+                                <p><span class="text-overline">get</span> in <span class="text-underline">tou</span>ch
+                                </p>
+                            </div>
+                            <p class="con-4-img-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                accusantium nisi veniam animi, similique itaque nam aliquid doloremque quae magnam?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container con-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="img7" src="img/img7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="container con-6">
+                    <div class="row">
+                        <div class="col-2"><img class="img8" src="img/img8.png" alt=""></div>
+                        <div class="col-2"><img class="img9" src="img/img9.png" alt=""></div>
+                        <div class="col-2"><img class="img10" src="img/img10.png" alt=""></div>
+                        <div class="col-2"><img class="img11" src="img/img11.png" alt=""></div>
+                        <div class="col-2">
+                            <p><span class="text-overline">insta</span>gram <span class="text-underline">with </span> us
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container con-7">
+                    <div class="row">
+                        <hr>
+                        <h4 class="text-logo">blathanna</h4>
+                        <p>Copyright © 2020 Blathanna | Powered by Ayotech Theme</p>
+                        <ul class="nav footer-media-nav">
+                            <li class="nav-item"><a href="" class="nav-link"><iconify-icon
+                                        class="facebook-icon media-icon" icon="ri:facebook-fill"></iconify-icon></a>
+                            </li>
+                            <li class="nav-item"><a href="" class="nav-link"><iconify-icon
+                                        class="pinterest-icon media-icon" icon="mdi:pinterest"></iconify-icon></a></li>
+                            <li class="nav-item"><a href="" class="nav-link"><iconify-icon
+                                        class="twitter-icon media-icon" icon="mdi:twitter"></iconify-icon></a></li>
+                            <li class="nav-item"><a href="" class="nav-link"><iconify-icon
+                                        class=" instagram-icon media-icon" icon="mdi:instagram"></iconify-icon></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+</body>
+
+</html>
